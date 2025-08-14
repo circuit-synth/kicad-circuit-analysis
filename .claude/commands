@@ -36,6 +36,11 @@
 /push: git push origin main
 /tag: git tag v0.0.1 && git push origin v0.0.1
 
+## Context Portal
+/context-start: cd tools/context-portal && uvx context-portal --workspace kicad-circuit-analysis --port 8003
+/context-query: cd tools/context-portal && uvx context-portal query
+/context-add: cd tools/context-portal && uvx context-portal add
+
 ## Analysis Tools
 /analyze-project: cd python && kicad-qa
 /run-fmea: cd python && kicad-fmea
