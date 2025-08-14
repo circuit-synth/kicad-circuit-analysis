@@ -51,9 +51,6 @@ dev = [
     "ruff>=0.1.0",
     "mypy>=1.7.0",
 ]
-mcp = [
-    "mcp>=1.0.0",
-]
 ai = [
     "openai>=1.0.0",
     "anthropic>=0.8.0",
@@ -73,7 +70,6 @@ Issues = "https://github.com/circuit-synth/kicad-circuit-analysis/issues"
 [project.scripts]
 kicad-fmea = "kicad_circuit_analysis.cli:main_fmea"
 kicad-qa = "kicad_circuit_analysis.cli:main_qa"
-kicad-analysis-mcp = "kicad_circuit_analysis.mcp.server:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["python/kicad_circuit_analysis"]

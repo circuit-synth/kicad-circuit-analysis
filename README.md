@@ -9,7 +9,6 @@ A comprehensive Python library for quality assurance and failure mode analysis o
 - **🧠 AI-Powered FMEA**: Comprehensive failure mode and effects analysis with AI insights
 - **📊 Circuit Analysis**: Deep analysis of schematic and PCB designs
 - **✅ Quality Assurance**: Professional QA workflows and validation
-- **🤖 AI Integration**: Native MCP server for AI-assisted analysis
 - **📈 Risk Assessment**: Quantitative risk scoring and mitigation strategies
 - **📋 Professional Reports**: Detailed analysis reports for engineering review
 - **🔧 KiCAD Integration**: Seamless integration with KiCAD schematic and PCB files
@@ -103,10 +102,8 @@ kicad-circuit-analysis/
 │   │   ├── core/                   # Core analysis engine
 │   │   ├── fmea/                    # FMEA analysis modules
 │   │   ├── analysis/               # Circuit analysis algorithms
-│   │   ├── mcp/                     # MCP server interface
 │   │   └── utils/                   # Utilities and helpers
 │   └── tests/                       # Comprehensive test suite
-├── mcp-server/                      # TypeScript MCP server
 └── examples/                        # Usage examples
 ```
 

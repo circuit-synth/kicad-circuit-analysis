@@ -16,11 +16,6 @@
 /install-dev: cd python && pip install -e ".[dev]"
 /install-ai: cd python && pip install -e ".[ai]"
 
-## MCP Server
-/mcp-python: cd python && python -m kicad_circuit_analysis.mcp.server
-/mcp-ts-build: cd mcp-server && npm install && npm run build
-/mcp-ts-dev: cd mcp-server && npm run dev
-
 ## Code Quality
 /lint: cd python && ruff check kicad_circuit_analysis/
 /format: cd python && black kicad_circuit_analysis/ && ruff check --fix kicad_circuit_analysis/
@@ -35,11 +30,6 @@
 /commit: git add -A && git commit -m "Update kicad-circuit-analysis implementation"
 /push: git push origin main
 /tag: git tag v0.0.1 && git push origin v0.0.1
-
-## Context Portal
-/context-start: cd tools/context-portal && uvx context-portal --workspace kicad-circuit-analysis --port 8003
-/context-query: cd tools/context-portal && uvx context-portal query
-/context-add: cd tools/context-portal && uvx context-portal add
 
 ## Analysis Tools
 /analyze-project: cd python && kicad-qa
